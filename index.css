@@ -10,6 +10,9 @@ body{
 	padding-bottom: 0px;
 	
 }
+.navSplit{
+display:inline;
+}
 /* links */
 a{
 	text-decoration:none;
@@ -30,7 +33,12 @@ a:hover {
 #title-con img{
 	width:16%;
 	margin-left:16%;
+	min-width:125px;
 	
+}
+img{
+	
+	clip: rect(0px,10px,10px,0px);
 	
 }
 #title-con{
@@ -40,12 +48,12 @@ a:hover {
 #menu-items{
 text-align:center;
 width:100%;
-margin-top:-30px;	
 }
 #menu-items a{
 	
 	color:#393939;
 	font-family:arial;
+
 }
 /* -------------- */
 /* footer */
@@ -68,10 +76,11 @@ margin-top:-30px;
 	
 	margin-top:10px;
 	margin-bottom:10px;
-	
-	
+	padding-left:auto;
+	padding-right:auto;
+	width:1007px;
 	max-width:1010px;
-	width:80%;
+	width:auto;
 	margin-left:auto;
 	margin-right:auto;
 	
@@ -88,24 +97,6 @@ margin-top:-30px;
 }
 
 
-#mainCon{
-	background-color:white;
-	margin-top:10px;
-	margin-bottom:10px;
-	
-	border-style:solid;
-	border-color:#C1C1C1;
-	border-width:1px;
-	
-	
-	max-width:1010px;
-	width:80%;
-	margin-left:auto;
-	margin-right:auto;
-	
-	overflow:hidden;
-	
-}
 
 
 
@@ -265,5 +256,110 @@ color:red;
 	bottom:0px;
 	
 }
+
+@media screen and (max-width: 1030px) {
+
+	/* container */
+	#mainConIndex{
+		width:755px;
+		
+	}	
+	.navSplit{
+	display:inline;
+	}
+	#title-con img{
+		margin-bottom:10px;
+	
+	}
+}
+@media screen and (max-width: 780px) {
+
+	/* container */
+	#mainConIndex{
+		width:500px;
+		
+	}	
+	
+	/* cons */
+	.littleCon1 img, .littleCon2 img{
+		margin-top:5px;
+		margin-bottom:5px;
+		width: 50%;
+		height: 100px;
+		float:left;
+		
+	}
+	.littleCon1, .littleCon2{
+		margin:5px;
+		float:left;
+		width:480px;
+		padding:5px;
+		height:auto;
+	}
+
+	.littleCon1 .pic, .littleCon2 .pic{
+		margin-right:2.5%;
+		
+	}
+
+	.navSplit{
+		display:inline;
+	}
+	
+}
+
+@media screen and (max-width: 530px) {
+
+	/* container */
+	#mainConIndex{
+		width: 253px;
+		
+	}	
+	
+	/* cons */
+	.littleCon1 img, .littleCon2 img{
+		margin-top:5px;
+		margin-bottom:5px;
+		width: 100%;
+		height: 100px;
+		
+	}
+	.littleCon1, .littleCon2{
+		width:230px;
+		height:auto;
+	}
+
+/*-------- nav --------------*/
+	.navSplit{
+		display:none;
+	}
+	#menu-items a{
+		
+		color:#F8F9F9;
+		font-family:arial;
+		display:block;
+		width:100%;
+		background-color:#5f5f5f;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	#title-con img{
+		margin-bottom:20px;
+	
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
